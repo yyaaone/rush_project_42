@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jordan Lee — Résumé</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-mark">Jordan<span>.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="index.html" class="home-link">← Team home</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <!-- PART 1 — photo, name, job title -->
+  <section class="resume-hero" id="about">
+    <div>
+      <p class="eyebrow">Web Development Student</p>
+      <h1>Jordan Lee</h1>
+      <p class="role">Front-end leaning full-stack developer</p>
+      <p class="bio">
+        I'm a second-year computer science student with a background in graphic design, which is why
+        I care as much about how an interface feels as how it works. Outside of class I tinker with
+        small tools, contribute to open-source docs, and spend too much time redesigning things that
+        already work fine.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-solid" href="#" target="_blank" rel="noopener">Download CV ↗</a>
+        <a class="btn btn-outline" href="index.html">← Back to team</a>
+      </div>
+    </div>
+    <div class="portrait">
+      <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?w=600&h=750&fit=crop" alt="Jordan Lee portrait">
+      <div class="portrait-frame"></div>
+    </div>
+  </section>
+
+  <!-- PART 2 — experience & skills -->
+  <section class="experience" id="experience">
+    <div class="section-head">
+      <span class="num">02</span>
+      <h2>Experience &amp; skills</h2>
+    </div>
+
+    <div class="showcase-grid">
+      <div class="card">
+        <span class="tag">Project</span>
+        <h3>Campus Event Finder</h3>
+        <p>A React + Node app that lets students browse and RSVP to on-campus events, built as a team
+          project with Alex during the bootcamp's second week.</p>
+        <div class="stack"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+      </div>
+
+      <div class="card">
+        <span class="tag">Project</span>
+        <h3>Weather Dashboard</h3>
+        <p>A responsive dashboard pulling live data from a public weather API, with saved locations
+          stored in local storage.</p>
+        <div class="stack"><span>JavaScript</span><span>REST API</span><span>CSS Grid</span></div>
+      </div>
+
+      <div class="card">
+        <span class="tag">Experience</span>
+        <h3>Teaching Assistant, Intro to CS</h3>
+        <p>Ran weekly lab sessions for 40 first-year students, grading assignments and holding office
+          hours on debugging fundamentals.</p>
+        <div class="stack"><span>Python</span><span>Mentoring</span></div>
+      </div>
+
+      <div class="card">
+        <span class="tag">Experience</span>
+        <h3>Freelance, Brand Design</h3>
+        <p>Designed logos and simple marketing sites for two local small businesses before switching
+          focus toward development.</p>
+        <div class="stack"><span>Figma</span><span>Branding</span></div>
+      </div>
+    </div>
+
+    <div class="skills-row">
+      <div class="skill-block">
+        <h4>Languages</h4>
+        <ul><li>JavaScript / TypeScript</li><li>Python</li><li>HTML &amp; CSS</li></ul>
+      </div>
+      <div class="skill-block">
+        <h4>Tools &amp; frameworks</h4>
+        <ul><li>React</li><li>Node.js / Express</li><li>Git &amp; GitHub</li></ul>
+      </div>
+      <div class="skill-block">
+        <h4>Education</h4>
+        <ul><li>B.Sc. Computer Science, 2027</li><li>Intensive Web Bootcamp, 2026</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PART 3 — contact -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div>
+        <p class="eyebrow">03 — Get in touch</p>
+        <h2>Let's talk about your next project.</h2>
+        <p class="lead">I'm open to internships, collaborations, and honestly just a good conversation
+          about design and code. Reach out through any of these.</p>
+      </div>
+      <ul class="contact-list">
+        <li><a href="mailto:jordan.lee@example.com"><span>Email <span class="label">jordan.lee@example.com</span></span><span class="arrow">→</span></a></li>
+        <li><a href="#" target="_blank" rel="noopener"><span>GitHub <span class="label">@jordanlee</span></span><span class="arrow">→</span></a></li>
+        <li><a href="#" target="_blank" rel="noopener"><span>LinkedIn <span class="label">/in/jordanlee</span></span><span class="arrow">→</span></a></li>
+        <li><a href="#" target="_blank" rel="noopener"><span>Instagram <span class="label">@jordan.codes</span></span><span class="arrow">→</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Piscine Web — Exercise 00 — Rush
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
