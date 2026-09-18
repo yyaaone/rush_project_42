@@ -1,7 +1,11 @@
-*{box-sizing:border-box}
+*{
+  box-sizing:border-box
+}
+
 html{
   scroll-behavior:smooth
 }
+
 body{
   margin:0;
   background:#090b0f;
@@ -9,13 +13,17 @@ body{
   font-family:Arial,sans-serif;
   line-height:1.6
 }
+
 a{
   color:inherit;
   text-decoration:none
 }
+
+
 nav{
   position:sticky;
-  top:0;z-index:20;
+  top:0;
+  z-index:20;
   height:76px;
   padding:0 11%;
   display:flex;
@@ -24,9 +32,26 @@ nav{
   background:#090b0f;
   border-bottom:1px solid #1d222b
 }
-.logo{font-weight:bold;letter-spacing:1px}.logo span{color:#82edc9}
-nav div{display:flex;gap:30px;color:#929baa;font-size:15px}
-nav div a:hover{color:#82edc9}
+
+.logo{
+  font-weight:bold;
+  letter-spacing:1px
+}
+
+.logo span{
+  color:#82edc9
+}
+
+.nav-links{
+  display:flex;
+  gap:30px;
+  color:#929baa;
+  font-size:15px
+}
+
+.nav-links a:hover{
+  color:#82edc9
+}
 
 .intro-section{
   min-height:calc(100vh - 76px);
@@ -39,14 +64,58 @@ nav div a:hover{color:#82edc9}
   align-items:center
 }
 
-.label{font-size:12px;letter-spacing:2px;color:#82edc9;font-weight:bold;margin:0 0 16px}
-h1{font-size:clamp(50px,6.5vw,88px);line-height:.98;letter-spacing:-4px;margin:0 0 30px;font-weight:700}
-h1 span{color:#82edc9}
-h2{font-size:40px;letter-spacing:-1px;margin:8px 0 30px}
-h3{font-size:22px;margin:10px 0}
-.intro{font-size:18px;color:#939cab;max-width:620px}
-.button{display:inline-block;background:#82edc9;color:#08100e;font-weight:bold;padding:14px 23px;border-radius:30px;margin:25px 10px 0 0}
-.button.outline{background:transparent;color:#f3f5f8;border:1px solid #2b3340}
+.label{
+  font-size:12px;
+  letter-spacing:2px;
+  color:#82edc9;
+  font-weight:bold;
+  margin:0 0 16px
+}
+
+h1{
+  font-size:clamp(50px,6.5vw,88px);
+  line-height:.98;
+  letter-spacing:-4px;
+  margin:0 0 30px;
+  font-weight:700
+}
+
+h1 span{
+  color:#82edc9
+}
+
+h2{
+  font-size:40px;
+  letter-spacing:-1px;
+  margin:8px 0 30px
+}
+
+h3{
+  font-size:22px;
+  margin:10px 0
+}
+
+.intro{
+  font-size:18px;
+  color:#939cab;
+  max-width:620px
+}
+
+.button{
+  display:inline-block;
+  background:#82edc9;
+  color:#08100e;
+  font-weight:bold;
+  padding:14px 23px;
+  border-radius:30px;
+  margin:25px 10px 0 0
+}
+
+.button.outline{
+  background:transparent;
+  color:#f3f5f8;
+  border:1px solid #2b3340
+}
 
 .intro-image{
   display:flex;
@@ -57,8 +126,14 @@ h3{font-size:22px;margin:10px 0}
   border-radius:42px;
   position:relative;
   overflow:hidden;
-  background:radial-gradient(circle,#16212b 0,#0e121a 48%,#0b0e14 75%)
+  background:radial-gradient(
+    circle,
+    #16212b 0,
+    #0e121a 48%,
+    #0b0e14 75%
+  )
 }
+
 .intro-image img{
   width:100%;
   height:100%;
@@ -67,30 +142,77 @@ h3{font-size:22px;margin:10px 0}
   box-shadow:0 20px 50px rgba(0,0,0,0.25);
   object-position:30% center
 }
-.intro-image p{
-  position:absolute;
-  bottom:125px;
-  width:100%;
-  text-align:center;
-  color:#9ba5b4;
-  font-size:13px;
-  letter-spacing:2px
+
+
+section{
+  width:76%;
+  max-width:1200px;
+  margin:auto;
+  padding:100px 0
 }
 
-.circle{position:absolute;border:1px solid #335c57;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%)}
-.c1{width:650px;height:650px}.c2{width:450px;height:450px}.c3{width:190px;height:190px;background:#263642;display:flex;align-items:center;justify-content:center;font-size:54px;font-weight:bold}
+.team-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px
+}
 
-section{width:76%;max-width:1200px;margin:auto;padding:100px 0}
-.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
-.team-card{background:#10141b;border:1px solid #252c37;padding:35px;border-radius:15px}
-.team-card p:not(.label){color:#929baa}
-.team-card a{color:#82edc9;font-weight:bold;display:inline-block;margin-top:15px}
-.initial,.profile-circle{width:90px;height:90px;border-radius:50%;background:#263642;display:flex;align-items:center;justify-content:center;font-size:32px;font-weight:bold;margin-bottom:25px}
-.initial.green,.profile-circle.green{background:#183b36;color:#82edc9}
-.contact{border-top:1px solid #202630}
-.social{display:flex;gap:25px;color:#82edc9;font-weight:bold}
-footer{text-align:center;border-top:1px solid #202630;padding:30px;color:#68717f}
-.resume-head{width:76%;max-width:1200px;margin:auto;padding:90px 0;display:flex;gap:40px;align-items:center;border-bottom:1px solid #202630}
+.team-card{
+  background:#10141b;
+  border:1px solid #252c37;
+  padding:35px;
+  border-radius:15px
+}
+
+.team-card p:not(.label){
+  color:#929baa
+}
+
+.team-card a{
+  color:#82edc9;
+  font-weight:bold;
+  display:inline-block;
+  margin-top:15px
+}
+
+.initial{
+  width:160px;
+  height:190px;
+  border-radius:18px;
+  background:#263642;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:32px;
+  font-weight:bold;
+  margin-bottom:25px;
+  object-fit:cover;
+  object-position:15% center
+}
+
+
+.contact{
+  border-top:1px solid #202630
+}
+
+.social{
+  display:flex;
+  gap:25px;
+  color:#82edc9;
+  font-weight:bold
+}
+
+.resume-head{
+  width:76%;
+  max-width:1200px;
+  margin:auto;
+  padding:90px 0;
+  display:flex;
+  gap:40px;
+  align-items:center;
+  border-bottom:1px solid #202630
+}
+
 .profile-circle{
   width:220px;
   height:260px;
@@ -99,29 +221,77 @@ footer{text-align:center;border-top:1px solid #202630;padding:30px;color:#68717f
   flex-shrink:0;
   object-position:15% center
 }
-.initial{
-  width:160px;
-  height:190px;
-  object-fit:cover;
-  border-radius:18px;
-  object-position:15% center
+
+.resume{
+  padding-top:20px
 }
-.resume{padding-top:20px}
-.resume section{padding:65px 0;border-bottom:1px solid #202630}
-.experience{border-left:3px solid #82edc9;background:#10141b;padding:20px 25px;margin:20px 0;border-radius:0 10px 10px 0}
-.experience p{color:#929baa}
-.date{color:#82edc9!important;font-size:13px!important}
-#skills-hobby h2{margin-bottom:10px}
-.skill-hobby{display:flex;flex-wrap:wrap;gap:10px}
-.skill-hobby span{margin-bottom:20px;border:1px solid #303844;border-radius:20px;padding:8px 15px;color:#b8c0cb}
-.contact-small{background:#10141b;padding:30px!important;border:1px solid #252c37;border-radius:15px;margin-top:50px}
-.contact-small a{color:#82edc9}
 
-footer a{color:#222;text-decoration:none;transition:color 0.3s ease}
-footer a:hover{color:#888}
+.resume section{
+  padding:65px 0;
+  border-bottom:1px solid #202630
+}
 
-.menu-button,
-.theme-button{
+.experience{
+  border-left:3px solid #82edc9;
+  background:#10141b;
+  padding:20px 25px;
+  margin:20px 0;
+  border-radius:0 10px 10px 0
+}
+
+.experience p{
+  color:#929baa
+}
+
+.date{
+  color:#82edc9!important;
+  font-size:13px!important
+}
+
+.skill-hobby{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px
+}
+
+.skill-hobby span{
+  margin-bottom:20px;
+  border:1px solid #303844;
+  border-radius:20px;
+  padding:8px 15px;
+  color:#b8c0cb
+}
+
+.contact-small{
+  background:#10141b;
+  padding:30px!important;
+  border:1px solid #252c37;
+  border-radius:15px;
+  margin-top:50px
+}
+
+.contact-small a{
+  color:#82edc9
+}
+
+footer{
+  text-align:center;
+  border-top:1px solid #202630;
+  padding:30px;
+  color:#68717f
+}
+
+footer a{
+  color:#222;
+  text-decoration:none;
+  transition:color 0.3s ease
+}
+
+footer a:hover{
+  color:#888
+}
+
+.menu-button{
   display:none;
   border:1px solid #303844;
   background:transparent;
@@ -131,43 +301,62 @@ footer a:hover{color:#888}
   cursor:pointer;
   font-size:16px
 }
-.theme-button{display:inline-block}
-
-body.light{background:#f4f5f1;color:#17201d}
-body.light nav{background:#f4f5f1;border-color:#d7ddd8}
-body.light .team-card,
-body.light .experience,
-body.light .contact-small{background:white;border-color:#d7ddd8}
-body.light nav div{color:#58625f}
-body.light .intro,
-body.light .experience p{color:#59635f}
-body.light footer{border-color:#d7ddd8}
-
-.resume section .education-p{color:#59635f}
 
 @media(max-width:800px){
-  nav{padding:0 6%}
-  nav div{gap:12px;font-size:13px}
+
+  nav{
+    padding:0 6%
+  }
+
+  .nav-links{
+    gap:12px;
+    font-size:13px
+  }
 
   .intro-section{
     width:88%;
     grid-template-columns:1fr;
     padding:70px 0
   }
-  .intro-image{height:330px}
 
-  section,.resume-head{width:88%}
-  .team-grid{grid-template-columns:1fr}
-  .resume-head{padding:65px 0;align-items:flex-start;flex-direction:column}
-  h1{font-size:48px;letter-spacing:-2px}
-  h2{font-size:32px}
+  .intro-image{
+    height:330px
+  }
+
+  section,
+  .resume-head{
+    width:88%
+  }
+
+  .team-grid{
+    grid-template-columns:1fr
+  }
+
+  .resume-head{
+    padding:65px 0;
+    align-items:flex-start;
+    flex-direction:column
+  }
+
+  h1{
+    font-size:48px;
+    letter-spacing:-2px
+  }
+
+  h2{
+    font-size:32px
+  }
 
   .menu-button{
     display:block;
     margin-left:auto;
     margin-right:10px
   }
-  nav{position:sticky}
+
+  nav{
+    position:sticky
+  }
+
   nav .nav-links{
     display:none;
     position:absolute;
@@ -180,7 +369,8 @@ body.light footer{border-color:#d7ddd8}
     flex-direction:column;
     gap:15px
   }
-  nav .nav-links.show{display:flex}
-  .theme-button{align-self:flex-start}
-  body.light nav .nav-links{background:#f4f5f1;border-color:#d7ddd8}
+
+  nav .nav-links.show{
+    display:flex
+  }
 }
