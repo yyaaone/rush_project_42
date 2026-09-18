@@ -86,8 +86,13 @@ footer{text-align:center;border-top:1px solid #202630;padding:30px;color:#68717f
 .experience{border-left:3px solid #82edc9;background:#10141b;padding:20px 25px;margin:20px 0;border-radius:0 10px 10px 0}
 .experience p{color:#929baa}
 .date{color:#82edc9!important;font-size:13px!important}
-.skills{display:flex;flex-wrap:wrap;gap:10px}
-.skills span{border:1px solid #303844;border-radius:20px;padding:8px 15px;color:#b8c0cb}
+#skills-hobby h2{
+  margin-bottom: 10px;
+}
+.skill-hobby{display:flex;flex-wrap:wrap;gap:10px}
+.skill-hobby span{
+  margin-bottom: 20px;
+  border:1px solid #303844;border-radius:20px;padding:8px 15px;color:#b8c0cb}
 .contact-small{background:#10141b;padding:30px!important;border:1px solid #252c37;border-radius:15px;margin-top:50px}
 .contact-small a{color:#82edc9}
 @media(max-width:800px){
