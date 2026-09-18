@@ -57,12 +57,14 @@ footer{text-align:center;border-top:1px solid #202630;padding:30px;color:#68717f
   object-fit: cover;
   border-radius: 20px;
   flex-shrink: 0;
+  object-position: 15% center;
 }
 .initial {
   width: 160px;
   height: 190px;
   object-fit: cover;
   border-radius: 18px;
+  object-position: 15% center;
 }
 .resume{padding-top:20px}
 .resume section{padding:65px 0;border-bottom:1px solid #202630}
