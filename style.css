@@ -148,6 +148,9 @@ body.light .experience p {
 body.light footer {
   border-color: #d7ddd8;
 }
+.resume section .education-p{
+  color: #59635f;
+}
 
 @media(max-width:800px) {
   .menu-button {
