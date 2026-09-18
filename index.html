@@ -1,70 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Portfolio | Home</title>
+  <title>Portfolio - Our Team</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="navbar">
-    <a class="brand" href="index.html">TEAM<span>.</span></a>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#members">Members</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<nav>
+  <a class="logo" href="index.html">PORTFOLIO<span>.</span></a>
+  <button class="menu-button" aria-label="Open menu">☰</button>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a><button class="theme-button" aria-label="Change theme">☀</button>
+  </div>
+</nav>
 
-  <main>
-    <section class="hero" id="about">
-      <div class="hero-copy">
-        <p class="eyebrow">WEB TRAINING · EXERCISE 00</p>
-        <h1>Two people.<br><span>One creative team.</span></h1>
-        <p class="lead">Welcome to our mini portfolio. Explore our individual resumes, skills, experience, and ways to get in touch.</p>
-        <a class="button" href="#members">Meet the team ↓</a>
-      </div>
-      <div class="hero-card">
-        <div class="avatar large">T</div>
-        <p>Building ideas<br>into digital experiences.</p>
-      </div>
-    </section>
+<header class="hero" id="about">
+  <div class="hero-text">
+    <p class="label">WEB TRAINING • RUSH</p>
+    <h1>We turn ideas<br>into <span>digital<br>experiences.</span></h1>
+    <p class="intro">A two-person student portfolio showing our skills, experience and projects.</p>
+    <a class="button" href="#team">Meet the team</a>
+    <a class="button outline" href="#contact">Get in touch</a>
+  </div>
 
-    <section class="section" id="members">
-      <div class="section-heading">
-        <p class="eyebrow">THE TEAM</p>
-        <h2>Choose a resume</h2>
-      </div>
-      <div class="member-grid">
-        <article class="member-card">
-          <div class="avatar">A</div>
-          <p class="role">Member 01</p>
-          <h3>Your Name</h3>
-          <p>Frontend developer · Designer</p>
-          <a class="text-link" href="resume-one.html">View resume →</a>
-        </article>
-        <article class="member-card">
-          <div class="avatar accent">B</div>
-          <p class="role">Member 02</p>
-          <h3>Teammate Name</h3>
-          <p>Developer · Creative problem solver</p>
-          <a class="text-link" href="resume-two.html">View resume →</a>
-        </article>
-      </div>
-    </section>
+  <div class="hero-art">
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+    <div class="circle c3">AB</div>
+    <p>CREATIVE • CURIOUS • COLLABORATIVE</p>
+  </div>
+</header>
 
-    <section class="section contact" id="contact">
-      <p class="eyebrow">LET'S CONNECT</p>
-      <h2>Have a project in mind?</h2>
-      <p>Find us on GitHub, LinkedIn, or Instagram.</p>
-      <div class="socials">
-        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
-      </div>
-    </section>
-  </main>
+<section id="team">
+  <p class="label">OUR TEAM</p>
+  <h2>Meet the team</h2>
+  <div class="team-grid">
+    <article class="team-card">
+      <img class="initial" src="IMG_1557.jpg" alt="Your Name">
+      <p class="label">MEMBER 01</p>
+      <h3>Your Name</h3>
+      <p>Student / Web Developer</p>
+      <a href="resume-one.html">View resume →</a>
+    </article>
+    <article class="team-card">
+      <div class="initial green">B</div>
+      <p class="label">MEMBER 02</p>
+      <h3>Teammate Name</h3>
+      <p>Student / Web Developer</p>
+      <a href="resume-two.html">View resume →</a>
+    </article>
+  </div>
+</section>
 
-  <footer>© 2026 Team Portfolio · Exercise 00</footer>
+<section class="contact" id="contact">
+  <p class="label">CONTACT</p>
+  <h2>Let's get in touch.</h2>
+  <p>GitHub · LinkedIn · Instagram</p>
+  <div class="social">
+    <a href="https://github.com/" target="_blank">GitHub ↗</a>
+    <a href="https://www.linkedin.com/" target="_blank">LinkedIn ↗</a>
+    <a href="https://www.instagram.com/" target="_blank">Instagram ↗</a>
+  </div>
+</section>
+
+<footer>© 2026 Our Portfolio</footer>
+  <script src="script.js"></script>
 </body>
 </html>
